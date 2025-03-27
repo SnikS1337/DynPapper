@@ -1,0 +1,17 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Dynamic Wallpaper Engine">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Load Wallpaper" Click="OnLoadClicked"/>
+            <ComboBox x:Name="EffectsBox" Width="200"/>
+        </StackPanel>
+        
+        <Image x:Name="PreviewImage" Grid.Row="1" Stretch="Uniform"/>
+    </Grid>
+</Window>
